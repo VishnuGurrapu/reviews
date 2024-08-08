@@ -1,5 +1,6 @@
 import {Component} from 'react'
 import './index.css'
+
 class ReviewsCarousel extends Component {
   state = {
     index: 0,
@@ -32,26 +33,37 @@ class ReviewsCarousel extends Component {
 
     return (
       <div className="bgContainer">
-        <button className="btn" onClick={this.onClickPrev}>
-          <img
-            className="arrow"
-            alt="left arrow"
-            src="https://assets.ccbp.in/frontend/react-js/left-arrow-img.png "
-          />
-        </button>
-        <div className="reviewContainer">
-          <h1 className="username">{username}</h1>
-          <img className="profile" src={imgUrl} alt={username} />
-          <h2 className="companyname">{companyName}</h2>
-          <p className="description">{description}</p>
+        <h1 className="Heading">Reviews</h1>
+        <div className="Container">
+          <button
+            data-testid="leftArrow"
+            className="btn"
+            onClick={this.onClickPrev}
+          >
+            <img
+              className="arrow"
+              alt="left arrow"
+              src="https://assets.ccbp.in/frontend/react-js/left-arrow-img.png "
+            />
+          </button>
+          <div className="reviewContainer">
+            <h1 className="username">{username}</h1>
+            <img className="profile" src={imgUrl} alt={username} />
+            <h2 className="companyname">{companyName}</h2>
+            <p className="description">{description}</p>
+          </div>
+          <button
+            data-testid="rightArrow"
+            className="btn"
+            onClick={this.onClickNext}
+          >
+            <img
+              className="arrow"
+              alt="left arrow"
+              src="https://assets.ccbp.in/frontend/react-js/right-arrow-img.png "
+            />
+          </button>
         </div>
-        <button className="btn" onClick={this.onClickNext}>
-          <img
-            className="arrow"
-            alt="left arrow"
-            src="https://assets.ccbp.in/frontend/react-js/right-arrow-img.png "
-          />
-        </button>
       </div>
     )
   }
