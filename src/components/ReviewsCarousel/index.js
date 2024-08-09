@@ -49,7 +49,7 @@ class ReviewsCarousel extends Component {
           <div className="reviewContainer">
             <p className="username">{username}</p>
             <img className="profile" src={imgUrl} alt={username} />
-            <h2 className="companyname">{companyName}</h2>
+            <p className="companyname">{companyName}</p>
             <p className="description">{description}</p>
           </div>
           <button
