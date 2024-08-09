@@ -43,11 +43,11 @@ class ReviewsCarousel extends Component {
             <img
               className="arrow"
               alt="left arrow"
-              src="https://assets.ccbp.in/frontend/react-js/left-arrow-img.png "
+              src="https://assets.ccbp.in/frontend/react-js/left-arrow-img.png"
             />
           </button>
           <div className="reviewContainer">
-            <h1 className="username">{username}</h1>
+            <p className="username">{username}</p>
             <img className="profile" src={imgUrl} alt={username} />
             <h2 className="companyname">{companyName}</h2>
             <p className="description">{description}</p>
@@ -59,8 +59,8 @@ class ReviewsCarousel extends Component {
           >
             <img
               className="arrow"
-              alt="left arrow"
-              src="https://assets.ccbp.in/frontend/react-js/right-arrow-img.png "
+              alt="right arrow"
+              src="https://assets.ccbp.in/frontend/react-js/right-arrow-img.png"
             />
           </button>
         </div>
